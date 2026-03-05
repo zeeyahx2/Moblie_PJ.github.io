@@ -64,15 +64,16 @@
             </a>
         </nav>
     </header>
-       <nav class="bch-container" role="tablist" aria-label="เลือกปริญญา">
-            <button class="bch-tab" role="tab" aria-selected="true" aria-controls="ioteonebch" id="tab-iotbch" tabindex="0">
-                ภาควิชาวิศวกรรมไอโอทีและสารสนเทศ
-            </button>
-            <button class="bch-tab" role="tab" aria-selected="false" aria-controls="physicbch" id="tab-phybch" tabindex="-1">
-                หลักสูตรฟิสิกส์อุตสาหกรรม
-            </button>
-        </nav>
-    
+    <nav class="bch-container" role="tablist" aria-label="เลือกปริญญา">
+        <button class="bch-tab" role="tab" aria-selected="true" aria-controls="ioteonebch" id="tab-iotbch" tabindex="0">
+            ภาควิชาวิศวกรรมไอโอทีและสารสนเทศ
+        </button>
+        <button class="bch-tab" role="tab" aria-selected="false" aria-controls="physicbch" id="tab-phybch"
+            tabindex="-1">
+            หลักสูตรฟิสิกส์อุตสาหกรรม
+        </button>
+    </nav>
+
     <section class="faculty-section" id="ioteonebch" role="tabpanel" aria-labelledby="tab-iotbch">
         <div class="faculty-grid">
             <div class="faculty-card">
@@ -137,18 +138,18 @@
                 <h3 class="faculty-name">รศ.ดร.อรรถสิทธิ์ หล่าสกุล</h3>
                 <p class="faculty-role">อาจารย์พิเศษ</p>
             </div>
-            
+
             <div class="faculty-card">
                 <img src="../asset/Prof_Eng/อจปิติเขต.jpg">
                 <h3 class="faculty-name">ศ.ดร.ปิติเขต สู้รักษา</h3>
                 <p class="faculty-role">อาจารย์พิเศษ</p>
             </div>
             <div class="faculty-card">
-                <img src="../asset/Prof_Eng/Suwilai.png" >
+                <img src="../asset/Prof_Eng/Suwilai.png">
                 <h3 class="faculty-name">ดร.สุวิไล พุ่มโพธิ์</h3>
                 <p class="faculty-role">รองหัวหน้าภาควิชา (ฝ่ายกิจการภายนอก)</p>
             </div>
-            </div>
+        </div>
     </section>
 
     <section class="faculty-section" id="physicbch" role="tabpanel" aria-labelledby="tab-phybch">
@@ -281,7 +282,8 @@
         <div class="foot-container">
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <a href="../Home/home.html"> <img src="../asset/logo.png" alt="footer-logo" class="footer-logo-img"></a>
+                    <a href="../Home/home.html"> <img src="../asset/logo.png" alt="footer-logo"
+                            class="footer-logo-img"></a>
                 </div>
 
                 <section class="footer-contact">
@@ -320,38 +322,9 @@
     </footer>
     <script src="../Faculty/faculty.js"></script>
     <script src="../asset/darkmode.js"></script>
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'th',
-        includedLanguages: 'th,en',
-    }, 'google_translate_element');
 
-    setTimeout(() => {
-        const banner = document.querySelector('.goog-te-banner-frame');
-        if (banner) banner.style.display = 'none';
-        document.body.style.top = '0';
-        document.body.style.position = 'static';
-    }, 1000);
-}
-
-function switchLang(lang, btnEl) {
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    if (btnEl) btnEl.classList.add('active');
-
-    const select = document.querySelector('.goog-te-combo');
-    if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event('change'));
-    }
-
-    document.querySelectorAll('text[data-th], tspan[data-th]').forEach(el => {
-        const translation = el.getAttribute('data-' + lang);
-        if (translation) el.textContent = translation;
-    });
-}
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../asset/js/translate.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

@@ -629,3 +629,16 @@ body { top: 0 !important; }
   /* animation */
   transform: translateY(0);
 }
+
+.content-about[role="tabpanel"]{
+  margin: 0;
+  padding: 0;
+}
+
+.content-about[role="tabpanel"] > h1{
+  margin-top: 0;
+}
+
+.content-about[role="tabpanel"]{
+  margin-top: -20px; /*แก้ให้2,ต่อเนื่อง,เอกโทไม่เว้นกับแท็บบาร์*/
+}
