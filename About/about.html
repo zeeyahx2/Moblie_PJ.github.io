@@ -4,12 +4,11 @@
 <head>
     <script src="../asset/navbar.js" defer></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT and Information Engineering, KMITLL</title>
     <link rel="stylesheet" href="../About/about.css">
     <link rel="stylesheet" href="../asset/darkmode-variables.css">
     <link rel="stylesheet" href="../asset/darkmode-toggle.css">
-    <link rel="stylesheet" href="../about/about.css">
 </head>
 
 <body>
@@ -19,6 +18,7 @@
         <button class="lang-btn active notranslate" onclick="switchLang('th', this)">TH</button>
         <button class="lang-btn notranslate" onclick="switchLang('en', this)">EN</button>
     </div>
+
     <div id="navbar-placeholder"></div>
     <div class="mode-toggle-container">
         <label class="switch">
@@ -29,6 +29,7 @@
             </span>
         </label>
     </div>
+
     <header class="topbar">
         <div class="logo">
             <a href="../Home/home.html"> <img src="../asset/logo.png" alt="logodeptabbar" class="logodeptabbar"></a>
@@ -68,91 +69,348 @@
         </nav>
     </header>
 
- <nav class="choose">
+    <!-- <nav class="choose">
         <li class="Iot1"><a href="../About/about.html">วิศวกรรมไอโอทีและสารสนเทศ</a></li>
         <li class="Iot2"><a href="../About/about2.html">2 ปริญญา</a></li>
         <li class="continuous"><a href="../About/about3.html">ต่อเนื่อง</a></li>
         <li class="poTopoEgg"><a href="../About/about4.html">ป.โท-ป.เอก</a></li>
+    </nav> -->
+
+    <nav class="bch-container" role="tablist" aria-label="เลือกปริญญา">
+        <button class="bch-tab" role="tab" aria-selected="true" aria-controls="content_ab_iot" id="content-ab-iot"
+            tabindex="0">
+            หลักสูตร 1 ปริญญา
+        </button>
+        <button class="bch-tab" role="tab" aria-selected="false" aria-controls="content_ab_twobch"
+            id="content-ab-twobch" tabindex="-1">
+            หลักสูตร 2 ปริญญา
+        </button>
+        <button class="bch-tab" role="tab" aria-selected="false" aria-controls="content_ab_con" id="content-ab-con"
+            tabindex="-1">
+            หลักสูตร ต่อเนื่อง
+        </button>
+        <button class="bch-tab" role="tab" aria-selected="false" aria-controls="content_ab_aiot" id="content-ab-aiot"
+            tabindex="-1">
+            หลักสูตร ปริญญาโทและปริญญาเอก
+        </button>
     </nav>
-    <h1>
-        วิศวกรรมระบบไอโอทีและสารสนเทศ<br>
-        <div class="NameEng">B.Eng. (IoT system and Information Engineering)</div>
-    </h1>
-    <section class="WhatIsIoT">
-        <p>
-            ในโลกยุคดิจิทัล 4.0 ที่เทคโนโลยีต่าง ๆ
-            เข้ามามีบทบาทสำคัญเป็นอย่างมากในชีวิตประจำวันรวมถึงการพัฒนาเศรษฐกิจระดับประเทศ
-            ที่การเชื่อมต่อสื่อสารนั้นเป็นไปอย่างไร้พรมแดน ไม่เพียงแต่การสื่อสารระหว่างมนุษย์อย่างเดียว
-            แต่ยังมีการเชื่อมต่อส่อสารระหว่างอุปกรณ์กับอุปกรณ์ เครื่องจักร หรือทุกสรรพสิ่ง
-            จึงเป็นที่มาของเทคโนโลยีระบบอินเตอร์เน็ตในทุกสรรพสิ่งหรือเรียกสั้นๆว่าไอโอที (IoT)
-            ซึ่งประกอบด้วยเทคโนโลยีด้านสมาร์ทเซ็นเซอร์ การสื่อสารและเครือข่าย คอมพิวเตอร์และการพัฒนาซอฟต์แวร์
-            วิทยาการข้อมูลและปัญญาประดิษฐ์
-            ซึ่งเป็นศาสตร์ที่บูรณาการความรู้ในหลากหลายด้านหรือเรียกว่าสหวิทยาการเพื่อให้สามารถออกแบบสร้างนวัตกรรมด้านระบบไอโอทีและสารสนเทศได้
-            <br>
-            <br>
-            หลักสูตรวิศวกรรมระบบไอโอทีและสารสนเทศเป็นหลักสูตรที่ตอบสนองต่อนโยบายทางการพัฒนาเศรษฐกิจ
-            และอุตสาหกรรมของรัฐบาล โดยมีความสอดคล้องกันกับแผนพัฒนาเศรษฐกิจและสังคมแห่งชาติฉบับที่ 13 (พ.ศ. 2565-2569)
-            ที่ได้มีการกล่าวถึงการเปลี่ยนแปลงทางเทคโนโลยีแบบก้าวกระโดด (Disruption) และหนึ่งในเทคโนโลยีที่สำคัญนั้นคือ
-            เทคโนโลยีระบบไอโอทีและสารสนเทศ เช่นเดียวกันกับอุตสาหกรรมเป้าหมายของประเทศ หรือที่เรียกว่า “S-Curve”
-            ที่มีอุตสาหกรรมอิเล็กทรอนิกส์อัจฉณิยะ และอุตสาหกรรมดิจิทัล (New S-Curve)
-            รวมถึงการพัฒนาเขตเศรษฐกิจพิเศษภาคตะวันออก (EEC) ที่ภาครัฐจะสนับสนุนและมีความต้องการบัณฑิตในสาขานี้จำนวนมาก
-            <br>
-            <br>
-            หลักสูตรวิศวกรรมระบบไอโอทีและสารสนเทศ เป็นเสมือนฟันเฟืองที่เชื่อมองค์ประกอบของโลกดิจิทัลเข้าด้วยกัน
-            ทั้งศึกษาที่เรียนในหลักสูตรนี้จะได้ศึกษาและปฏิบัติเกี่ยวกับด้านเทคโนโลยีระบบไอโอทีและสารสนเทศโดยอาศัยความรู้พื้นฐาน
-            ทั้งด้านซอฟต์แวร์ ประกอบด้วย การเขียนโปรแกรมคอมพิวเตอร์ การพัฒนาซอฟต์แวร์และแอพพลิเคชัน ด้านฮาร์ดแวร์ได้แก่
-            การพัฒนาอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะและสมาร์ทเซ็นเซอร์ รวมถึงเชื่อมโยงส่อสารเข้าหากันด้วย
-            การศึกษาด้านการสื่อสารและเครือข่าย ไปจนถึงการประยุกต์ใช้เทคโนโลยีปัญญาประดิษฐ์และวิทยาการข้อมูล
-            โดยผสมผสานความรู้ต่าง ๆ เหล่านี้เข้ากับกระบวนการทางวิศวกรรมศาสตร์ คณิตศาสตร์ เพื่อออกแบบสร้างนวัตกรรมใหม่ ๆ
-            และส่งเสริมให้นักศึกศึกษาต่อยอดนวัตกรรมของตนเองเพื่อผลิตใช้หรือทำเป็นสตาร์ทอัพเพื่อสร้างธุรกิจของตนเองได้
-        </p>
-    </section>
-    <section class="money">
-        <div class="money1">ค่าธรรมเนียมการศึกษา</div>
-        <div class="money2">25,000</div>
-        <div class="money3">บาท/ภาคการศึกษา</div>
-    </section>
-    <section class="careerH">
-        <div>อาชีพที่ประกอบได้หลังจบการศึกษา</div>
-        <div class="plus"><img src="../asset/Icon/plus.svg" alt="plus"></div>
-    </section>
-    <section class="career">
-        <div class="CareerContent">
-            <ul>
-                <li>วิศวกรระบบไอโอที (IoT Engineer)</li>
-                <li>วิศวกรระบบสารสนเทศ (Information System Engineer)</li>
-                <li>วิศวกรระบบสมองกลฝังตัว (Embedded System Engineer)</li>
-                <li>วิศวกรซอฟต์แวร์ระบบสมองกลฝังตัว (Embedded Software Engineer)</li>
-                <li>นักพัฒนาแอพพลิเคชัน (Application Developer)</li>
-                <li>โปรแกรมเมอร์ (Programmer)</li>
-                <li>วิศวกรซอฟต์แวร์ (Software Engineer)</li>
-                <li>นักพัฒนาส่วนหน้า (Front End Developer)</li>
-                <li>นักพัฒนาส่วนเบื้องหลัง (Back End Developer)</li>
-                <li>นักพัฒนาฟูลสแต็ก (Full Stack Developer)</li>
-                <li>วิศวกรระบบคลาว์ (Cloud Engineer)</li>
-                <li>วิศวกรระบบเครือข่าย (Network Engineer)</li>
-                <li>นักวิทยาการข้อมูล (Data Scientist)</li>
-                <li>วิศวกรข้อมูล (Data Engineer)</li>
-                <li>ผู้ดูแลระบบ (System Administrator)</li>
-                <li>นักวิจัย นักวิชาการ เจ้าของธุรกิจส่วนตัว และอาชีพอื่น ๆ
-                    ที่เกี่ยวข้องกับทางด้านคอมพิวเตอร์หรือไอทีทั้งหมด</li>
-            </ul>
-        </div>
-    </section>
-    <section class="gallery">
-        <div class="imgList">
-            <div class="ab1"><img src="../asset/Pic/1.jpg"></div>
-            <div class="ab2"><img src="../asset/Pic/ab2.jpg"></div>
-            <div class="ab3"><img src="../asset/Pic/ab3.jpg"></div>
-            <div class="ab4"><img src="../asset/Pic/ab4.jpg"></div>
-        </div>
-    </section>
+
+    <main>
+        <section class="content-about" id="content_ab_iot" role="tabpanel" aria-labelledby="content-ab-iot">
+            <h1>
+                วิศวกรรมระบบไอโอทีและสารสนเทศ<br>
+                <div class="NameEng">B.Eng. (IoT system and Information Engineering)</div>
+            </h1>
+
+            <section class="WhatIsIoT">
+                <p>
+                    ในโลกยุคดิจิทัล 4.0 ที่เทคโนโลยีต่าง ๆ
+                    เข้ามามีบทบาทสำคัญเป็นอย่างมากในชีวิตประจำวันรวมถึงการพัฒนาเศรษฐกิจระดับประเทศ
+                    ที่การเชื่อมต่อสื่อสารนั้นเป็นไปอย่างไร้พรมแดน ไม่เพียงแต่การสื่อสารระหว่างมนุษย์อย่างเดียว
+                    แต่ยังมีการเชื่อมต่อส่อสารระหว่างอุปกรณ์กับอุปกรณ์ เครื่องจักร หรือทุกสรรพสิ่ง
+                    จึงเป็นที่มาของเทคโนโลยีระบบอินเตอร์เน็ตในทุกสรรพสิ่งหรือเรียกสั้นๆว่าไอโอที (IoT)
+                    ซึ่งประกอบด้วยเทคโนโลยีด้านสมาร์ทเซ็นเซอร์ การสื่อสารและเครือข่าย คอมพิวเตอร์และการพัฒนาซอฟต์แวร์
+                    วิทยาการข้อมูลและปัญญาประดิษฐ์
+                    ซึ่งเป็นศาสตร์ที่บูรณาการความรู้ในหลากหลายด้านหรือเรียกว่าสหวิทยาการเพื่อให้สามารถออกแบบสร้างนวัตกรรมด้านระบบไอโอทีและสารสนเทศได้
+                    <br>
+                    <br>
+                    หลักสูตรวิศวกรรมระบบไอโอทีและสารสนเทศเป็นหลักสูตรที่ตอบสนองต่อนโยบายทางการพัฒนาเศรษฐกิจ
+                    และอุตสาหกรรมของรัฐบาล โดยมีความสอดคล้องกันกับแผนพัฒนาเศรษฐกิจและสังคมแห่งชาติฉบับที่ 13 (พ.ศ.
+                    2565-2569)
+                    ที่ได้มีการกล่าวถึงการเปลี่ยนแปลงทางเทคโนโลยีแบบก้าวกระโดด (Disruption)
+                    และหนึ่งในเทคโนโลยีที่สำคัญนั้นคือ
+                    เทคโนโลยีระบบไอโอทีและสารสนเทศ เช่นเดียวกันกับอุตสาหกรรมเป้าหมายของประเทศ หรือที่เรียกว่า “S-Curve”
+                    ที่มีอุตสาหกรรมอิเล็กทรอนิกส์อัจฉณิยะ และอุตสาหกรรมดิจิทัล (New S-Curve)
+                    รวมถึงการพัฒนาเขตเศรษฐกิจพิเศษภาคตะวันออก (EEC)
+                    ที่ภาครัฐจะสนับสนุนและมีความต้องการบัณฑิตในสาขานี้จำนวนมาก
+                    <br>
+                    <br>
+                    หลักสูตรวิศวกรรมระบบไอโอทีและสารสนเทศ เป็นเสมือนฟันเฟืองที่เชื่อมองค์ประกอบของโลกดิจิทัลเข้าด้วยกัน
+                    ทั้งศึกษาที่เรียนในหลักสูตรนี้จะได้ศึกษาและปฏิบัติเกี่ยวกับด้านเทคโนโลยีระบบไอโอทีและสารสนเทศโดยอาศัยความรู้พื้นฐาน
+                    ทั้งด้านซอฟต์แวร์ ประกอบด้วย การเขียนโปรแกรมคอมพิวเตอร์ การพัฒนาซอฟต์แวร์และแอพพลิเคชัน
+                    ด้านฮาร์ดแวร์ได้แก่
+                    การพัฒนาอุปกรณ์อิเล็กทรอนิกส์อัจฉริยะและสมาร์ทเซ็นเซอร์ รวมถึงเชื่อมโยงส่อสารเข้าหากันด้วย
+                    การศึกษาด้านการสื่อสารและเครือข่าย ไปจนถึงการประยุกต์ใช้เทคโนโลยีปัญญาประดิษฐ์และวิทยาการข้อมูล
+                    โดยผสมผสานความรู้ต่าง ๆ เหล่านี้เข้ากับกระบวนการทางวิศวกรรมศาสตร์ คณิตศาสตร์
+                    เพื่อออกแบบสร้างนวัตกรรมใหม่ ๆ
+                    และส่งเสริมให้นักศึกศึกษาต่อยอดนวัตกรรมของตนเองเพื่อผลิตใช้หรือทำเป็นสตาร์ทอัพเพื่อสร้างธุรกิจของตนเองได้
+                </p>
+            </section>
+
+            <section class="money">
+                <div class="money1">ค่าธรรมเนียมการศึกษา</div>
+                <div class="money2">25,000</div>
+                <div class="money3">บาท/ภาคการศึกษา</div>
+            </section>
+
+            <section class="careerH">
+                <div>อาชีพที่ประกอบได้หลังจบการศึกษา</div>
+                <div class="plus"><img src="../asset/Icon/plus.svg" alt="plus"></div>
+            </section>
+
+            <section class="career">
+                <div class="CareerContent">
+                    <ul>
+                        <li>วิศวกรระบบไอโอที (IoT Engineer)</li>
+                        <li>วิศวกรระบบสารสนเทศ (Information System Engineer)</li>
+                        <li>วิศวกรระบบสมองกลฝังตัว (Embedded System Engineer)</li>
+                        <li>วิศวกรซอฟต์แวร์ระบบสมองกลฝังตัว (Embedded Software Engineer)</li>
+                        <li>นักพัฒนาแอพพลิเคชัน (Application Developer)</li>
+                        <li>โปรแกรมเมอร์ (Programmer)</li>
+                        <li>วิศวกรซอฟต์แวร์ (Software Engineer)</li>
+                        <li>นักพัฒนาส่วนหน้า (Front End Developer)</li>
+                        <li>นักพัฒนาส่วนเบื้องหลัง (Back End Developer)</li>
+                        <li>นักพัฒนาฟูลสแต็ก (Full Stack Developer)</li>
+                        <li>วิศวกรระบบคลาว์ (Cloud Engineer)</li>
+                        <li>วิศวกรระบบเครือข่าย (Network Engineer)</li>
+                        <li>นักวิทยาการข้อมูล (Data Scientist)</li>
+                        <li>วิศวกรข้อมูล (Data Engineer)</li>
+                        <li>ผู้ดูแลระบบ (System Administrator)</li>
+                        <li>นักวิจัย นักวิชาการ เจ้าของธุรกิจส่วนตัว และอาชีพอื่น ๆ
+                            ที่เกี่ยวข้องกับทางด้านคอมพิวเตอร์หรือไอทีทั้งหมด</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="imgList">
+                    <div class="ab1"><img src="../asset/Pic/1.jpg"></div>
+                    <div class="ab2"><img src="../asset/Pic/ab2.jpg"></div>
+                    <div class="ab3"><img src="../asset/Pic/ab3.jpg"></div>
+                    <div class="ab4"><img src="../asset/Pic/ab4.jpg"></div>
+                </div>
+            </section>
+        </section>>
+
+        <section class="content-about" id="content_ab_twobch" role="tabpanel" aria-labelledby="content-ab-twobch"
+            hidden>
+            <h1>
+                ฟิสิกส์อุตสาหกรรมและวิศวกรรมระบบไอโอทีและสารสนเทศ<br>
+                <div class="NameEng">B.Sc. Industrial Physics + B.Eng. IoT System and Information </div>
+            </h1>
+            <section class="WhatIsIoT">
+                <p>
+                    ครั้งแรกของประเทศไทยโครงการหลักสูตรปริญญาตรีสองปริญญา (Dual Degree)
+                    ระหว่างคณะวิศวกรรมศาสตร์และคณะวิทยาศาสตร์
+                    สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง วศ.บ. วิศวกรรมระบบไอโอทีและสารสนเทศ และ วท.บ.
+                    ฟิสิกส์อุตสาหกรรม
+                    <br>
+                    <br>
+                    ทำไมต้อง 2 ปริญญา?<br>
+                    ในโลกยุค Disruption ได้เปลี่ยนแปลงทุกสิ่งไปอย่างรวดเร็ว
+                    การรู้เพียงศาสตร์ใดศาสตร์หนึ่งจึงอาจไม่เพียงพอกับการต่อสู้ในยุคแห่งการเปลี่ยนแปลงนี้แล้ว
+                    โดยเฉพาะอย่างยิ่งทักษะทางดิจิทัลและเทคโนโลยีที่จำเป็นต่อโลกอันไร้พรมแดน จึงเป็นที่มาของหลักสูตร
+                    “PhysIoT”
+                    ที่ตอบสนอง กับการเปลี่ยนแปลงในยุค Disruption
+                    นี้ให้บัณฑิตมีความรู้ที่รอบด้านทั้งทางด้านวิทยาศาสตร์และวิศวกรรมศาสตร์
+                    อันเป็นศาสตร์สำคัญที่ช่วยขับเคลื่อนพัฒนาประเทศชาติ
+                    เพื่อผลิตบัณฑิตนักฟิสิกส์ไอโอทีที่สามารถบูรณาการองค์ความรู้ที่จะสร้างนวัตกรรมเพื่อขับเคลื่อนประเทศไทยต่อไปในอนาคต
+                    ตอบโจทย์อุตสาหกรรมในยุค Thailand 4.0 อุตสาหกรรม New S-Curve รวมถึงอุตสาหกรรมแห่งอนาคต
+                </p>
+            </section>
+            <section class="money">
+                <div class="money1">ค่าธรรมเนียมการศึกษา</div>
+                <div class="money2">40,000</div>
+                <div class="money3">บาท/ภาคการศึกษา</div>
+            </section>
+            <section class="careerH">
+                <div>อาชีพที่ประกอบได้หลังจบการศึกษา</div>
+                <div class="plus"><img src="../asset/Icon/plus.svg" alt="plus"></div>
+            </section>
+            <section class="career">
+                <div class="CareerContent">
+                    <ul>
+                        <li>นักวิจัยในภาครัฐและเอกชน</li>
+                        <li>ผู้ประกอบการทางธุรกิจเทคโนโลยีวิศวกรไอโอที(IoT Engineer)</li>
+                        <li>วิศวกรซอฟต์แวร์(Software Engineer)</li>
+                        <li>วิศวกรระบบสมองกลฝังตัว (Embedded Engineer)</li>
+                        <li>นักพัฒนาแอพพลิเคชัน(Application Developer)</li>
+                        <li>นักวิทยาการข้อมูล(Data Scientist)</li>
+                        <li>วิศวกรควบคุณภาพ</li>
+                        <li>นักพัฒนาส่วนหน้า (Front End Developer)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="imgList">
+                    <div class="ab1"><img src="../asset/Pic/1.jpg"></div>
+                    <div class="ab2"><img src="../asset/Pic/ab2.jpg"></div>
+                    <div class="ab3"><img src="../asset/Pic/ab3.jpg"></div>
+                    <div class="ab4"><img src="../asset/Pic/ab4.jpg"></div>
+                </div>
+            </section>
+        </section>
+
+        <section class="content-about" id="content_ab_con" role="tabpanel" aria-labelledby="content-ab-con" hidden>
+            <h1>
+                วิศวกรรมคอมพิวเตอร์และไอโอที<br>
+                <div class="NameEng">B.Eng. Computer Engineering and IoT </div>
+            </h1>
+            <section class="WhatIsIoT">
+                <p>
+                    ทำไมต้องเรียนวิศวกรรมคอมพิวเตอร์และไอโอที (ต่อเนื่อง)
+                    <br>
+                    <br>
+                    หลักสูตรวิศวกรรมคอมพิวเตอร์มุ่งสร้างวิศวกรคอมพิวเตอร์
+                    ที่สามารถปฏิบัติงานในภาคธุรกิจได้อย่างมีประสิทธิผล
+                    หลักสูตรเล็งเห็นความสำคัญของคณิตศาสตร์และทฤษฎีด้านวิทยาการคอมพิวเตอร์
+                    ซึ่งเป็นพื้นฐานที่สำคัญของการแก้ปัญหาโดยใช้คอมพิวเตอร์
+                    จึงได้จัดให้เรียนรายวิชาในกลุ่มนี้อย่างเพียงพอ ได้แก่ การเขียนโปรแกรม
+                    โครงสร้างข้อมูลและอัลกอริทึม การพัฒนาซอฟต์แวร์ สถิติและความน่าจะเป็น พีชคณิตเชิงเส้น
+                    โครงสร้างไม่ต่อเนื่อง (Discrete Structure) ทฤษฎีการคำนวณ
+                    ซึ่งเป็นรากฐานที่สำคัญของการคิดเชิงคอมพิวเตอร์ และการเรียนวิทยาการคอมพิวเตอร์ขั้นสูง เช่น Data
+                    Science ปัญญาประดิษฐ์ (AI) หรืออื่นๆ ต่อไป
+                    นอกจากนั้นหลักสูตรยังได้จัดให้เรียนทฤษฎีด้านวิศวกรรมคอมพิวเตอร์ ได้แก่ พื้นฐานระบบดิจิตอล
+                    องค์ประกอบคอมพิวเตอร์ สถาปัตยกรรมคอมพิวเตอร์ ระบบปฏิบัติการ และเครือข่ายคอมพิวเตอร์
+                    เพื่อให้ผู้เรียนมีความเข้าใจในการทำงานของระบบคอมพิวเตอร์ และสามารถปฏิบัติงานในสายงานต่างๆ ได้
+                    หลักสูตรนี้ออกแบบโดยมุ่งเน้นการฝึกปฏิบัติเพื่อให้เกิดทักษะความชำนาญในการปฏิบัติงาน
+                </p>
+            </section>
+            <section class="money">
+                <div class="money1">ค่าธรรมเนียมการศึกษา</div>
+                <div class="money2">35,000</div>
+                <div class="money3">บาท/ภาคการศึกษา</div>
+            </section>
+            <section class="gallery">
+                <div class="imgList">
+                    <div class="ab1"><img src="../asset/Pic/1.jpg"></div>
+                    <div class="ab2"><img src="../asset/Pic/ab2.jpg"></div>
+                    <div class="ab3"><img src="../asset/Pic/ab3.jpg"></div>
+                    <div class="ab4"><img src="../asset/Pic/ab4.jpg"></div>
+                </div>
+            </section>
+        </section>
+
+        <section class="content-about" id="content_ab_aiot" role="tabpanel" aria-labelledby="content-ab-aiot" hidden>
+            <h1>
+                ปริญญาโท วิศวกรรมมหาบัณฑิต (เอไอโอทีและสารสนเทศ)<br>
+                <div class="NameEng">M.Eng. (AIoT and Information)</div>
+            </h1>
+            <section class="WhatIsIoT">
+                <p>
+                    ปริญญาโท วิศวกรรมศาสตรมหาบัณฑิต (เอไอโอทีและสารสนเทศ)
+                    <br>
+                    <br>
+                    หลักสูตรมุ่งผลิตมหาบัณฑิตที่มีความรู้และทักษะด้าน ปัญญาประดิษฐ์ (Artificial Intelligence),
+                    Internet of Things (IoT) และระบบสารสนเทศ โดยเน้นการบูรณาการเทคโนโลยีดิจิทัลเข้ากับระบบจริง
+                    เพื่อพัฒนาระบบอัจฉริยะที่สามารถเก็บรวบรวม วิเคราะห์ และใช้ประโยชน์จากข้อมูลได้อย่างมีประสิทธิภาพ
+                    ผู้เรียนจะได้ศึกษาทั้งด้านสถาปัตยกรรมเอไอโอที ระบบฝังตัว การสื่อสารข้อมูล
+                    การวิเคราะห์ข้อมูลและการเรียนรู้ของเครื่อง รวมถึงการออกแบบและพัฒนาระบบสารสนเทศสมัยใหม่
+                    โดยมุ่งเน้นการประยุกต์ใช้งานในภาคอุตสาหกรรม องค์กร และสังคมดิจิทัล
+                    พร้อมเสริมสร้างทักษะการคิดเชิงวิเคราะห์และการทำวิจัยเชิงประยุกต์ผ่านวิทยานิพนธ์หรือโครงงานวิจัย
+                </p>
+            </section>
+
+            <section class="poToContent">
+                <div class="Content1">
+                    <details>
+                        <summary>ผลลัพธ์การเรียนรู้</summary>
+                        ผู้สำเร็จการศึกษาจะมีความสามารถในการออกแบบ
+                        และพัฒนาระบเอไอโอทีและระบบสารสนเทศอัจฉริยะ
+                        มีทักษะการวิเคราะห์ข้อมูลและการใช้ปัญญาประดิษฐ์เพื่อสนับสนุนการตัดสินใจ
+                        สามารถแก้ปัญหาทางวิศวกรรมที่ซับซ้อนได้อย่างเป็นระบบ
+                        และมีจริยธรรมทางวิชาชีพตามมาตรฐานระดับอุดมศึกษา
+                    </details>
+                </div>
+                <div class="Content2">
+                    <details>
+                        <summary>แนวทางการเรียนการสอน</summary>
+                        หลักสูตรจัดการเรียนการสอนโดยผสมผสานการเรียนรู้ภาคทฤษฎีและภาคปฏิบัติ เน้นการลงมือปฏิบัติจริง
+                        การทำโครงงาน และการศึกษากรณี
+                        ตัวอย่างจากภาคอุตสาหกรรม เพื่อเสริมสร้างทักษะการประยุกต์ใช้งานและการคิดเชิงระบบ
+                    </details>
+                </div>
+                <div class="Content3">
+                    <details>
+                        <summary>การวิจัยและโครงงาน</summary>
+                        ผู้เรียนจะได้ทำวิทยานิพนธ์หรือโครงงานวิจัยเชิงประยุกต์ด้านเอไอโอทีและสารสนเทศ
+                        โดยเน้นการแก้ปัญหา
+                        จริงและการพัฒนาระบบที่สามารถนำไปใช้งานได้ในภาคอุตสาหกรรมหรือองค์กร
+                    </details>
+                </div>
+                <div class="Content4">
+                    <details>
+                        <summary>แนวทางอาชีพ</summary>
+                        บัณฑิตสามารถประกอบอาชีพเป็นวิศวกรระบบอัจฉริยะ วิศวกรเอไอโอที วิศวกรระบบสารสนเทศ
+                        นักวิเคราะห์ข้อมูล หรือผู้เชี่ยวชาญด้านเทคโนโลยีดิจิทัลในภาคอุตสาหกรรมและองค์กรต่างๆ
+                    </details>
+                </div>
+            </section>
+            <h1>
+                ปริญญาเอก ปรัชญาดุษฎีบัณฑิต (เอไอโอทีและสารสนเทศ)<br>
+                <div class="NameEng">Ph.D. (AIoT and Information)</div>
+            </h1>
+            <section class="WhatIsIoT">
+                <p>
+                    ปริญญาเอก ปรัชญาดุษฎีบัณฑิต (เอไอโอทีและสารสนเทศ)
+                    <br>
+                    <br>
+                    หลักสูตรมุ่งเน้นการผลิตดุษฎีบัณฑิตที่มีความสามารถด้าน การวิจัยขั้นสูงและการสร้างองค์ความรู้ใหม่
+                    ทางด้านเอไอโอทีและระบบสารสนเทศอัจฉริยะ
+                    ผู้เรียนจะได้ศึกษาทฤษฎีและเทคโนโลยีขั้นลึกด้านปัญญาประดิษฐ์ ระบบ IoT อัจฉริยะ ระบบไซเบอร์-กายภาพ
+                    และการจัดการข้อมูลขั้นสูง
+                    ควบคู่กับการพัฒนางานวิจัยและนวัตกรรมที่สามารถนำไปประยุกต์ใช้ได้จริงและเผยแพร่ในระดับนานาชาติ
+                    หลักสูตรมุ่งสร้างนักวิจัย นักวิชาการ
+                    และผู้เชี่ยวชาญที่มีศักยภาพในการขับเคลื่อนเทคโนโลยีและอุตสาหกรรมดิจิทัลของประเทศ
+                </p>
+            </section>
+
+            <section class="poToContent">
+                <div class="Content1">
+                    <details>
+                        <summary>ผลลัพธ์การเรียนรู้</summary>
+                        ผู้สำเร็จการศึกษาจะมีความ
+                        สามารถในการวิจัยขั้นสูง การออกแบบและพัฒนาแบบจำลองหรือ
+                        อัลกอริทึมใหม่ด้านเอไอโอทีและสารสนเทศ สามารถวิเคราะห์และ
+                        สังเคราะห์องค์ความรู้เชิงวิชาการ และเผยแพร่ผลงานวิจัยในระดับนานาชาติอย่างมีคุณภาพ
+
+                    </details>
+                </div>
+                <div class="Content2">
+                    <details>
+                        <summary>แนวทางการเรียนการสอน</summary>
+                        หลักสูตรเน้นการเรียนรู้ผ่าน
+                        การวิจัยเป็นหลัก ผู้เรียนจะทำงาน
+                        วิจัยอย่างต่อเนื่องภายใต้การดูแลของอาจารย์ที่ปรึกษา พร้อมทั้งศึกษารายวิชา
+                        ขั้นสูงเพื่อเสริมสร้างพื้นฐานทางทฤษฎีและการวิจัย
+
+                    </details>
+                </div>
+                <div class="Content3">
+                    <details>
+                        <summary>การวิจัยและโครงงาน</summary>
+                        ผู้เรียนจะได้รับการส่งเสริม
+                        ให้ผลิตผลงานวิจัยที่สามารถตีพิมพ์ในวารสารหรือการประชุมวิชาการระดับนานาชาติ
+                        รวมถึงการนำผลงานวิจัยไปประยุกต์ใช้หรือพัฒนานวัตกรรมที่ตอบโจทย์ภาคอุตสาหกรรมและสังคม
+                    </details>
+                </div>
+                <div class="Content4">
+                    <details>
+                        <summary>แนวทางอาชีพ</summary>
+                        ดุษฎีบัณฑิตสามารถประกอบ
+                        อาชีพเป็นนักวิจัย นักวิชาการ อาจารย์มหาวิทยาลัย นักพัฒนาเทคโนโลยีขั้นสูง
+                        หรือผู้นำด้านนวัตกรรมและการวิจัยในองค์กรภาครัฐและเอกชน
+                    </details>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="imgList">
+                    <div class="ab1"><img src="../asset/Pic/1.jpg"></div>
+                    <div class="ab2"><img src="../asset/Pic/ab2.jpg"></div>
+                    <div class="ab3"><img src="../asset/Pic/ab3.jpg"></div>
+                    <div class="ab4"><img src="../asset/Pic/ab4.jpg"></div>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="foot-container">
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <a href="../Home/home.html"> <img src="../asset/logo.png" alt="footer-logo" class="footer-logo-img"></a>
+                    <a href="../Home/home.html"> <img src="../asset/logo.png" alt="footer-logo"
+                            class="footer-logo-img"></a>
                 </div>
 
                 <section class="footer-contact">
@@ -192,38 +450,40 @@
 
     <script src="../About/about.js"></script>
     <script src="../asset/darkmode.js"></script>
+
     <script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'th',
-        includedLanguages: 'th,en',
-    }, 'google_translate_element');
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'th',
+                includedLanguages: 'th,en',
+            }, 'google_translate_element');
 
-    setTimeout(() => {
-        const banner = document.querySelector('.goog-te-banner-frame');
-        if (banner) banner.style.display = 'none';
-        document.body.style.top = '0';
-        document.body.style.position = 'static';
-    }, 1000);
-}
+            setTimeout(() => {
+                const banner = document.querySelector('.goog-te-banner-frame');
+                if (banner) banner.style.display = 'none';
+                document.body.style.top = '0';
+                document.body.style.position = 'static';
+            }, 1000);
+        }
 
-function switchLang(lang, btnEl) {
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    if (btnEl) btnEl.classList.add('active');
+        function switchLang(lang, btnEl) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (btnEl) btnEl.classList.add('active');
 
-    const select = document.querySelector('.goog-te-combo');
-    if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event('change'));
-    }
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event('change'));
+            }
 
-    document.querySelectorAll('text[data-th], tspan[data-th]').forEach(el => {
-        const translation = el.getAttribute('data-' + lang);
-        if (translation) el.textContent = translation;
-    });
-}
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            document.querySelectorAll('text[data-th], tspan[data-th]').forEach(el => {
+                const translation = el.getAttribute('data-' + lang);
+                if (translation) el.textContent = translation;
+            });
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
