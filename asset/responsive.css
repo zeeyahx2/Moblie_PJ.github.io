@@ -21,16 +21,18 @@ html,body{
         max-width: 450px;
         margin: 0 auto;
         min-height: 100vh;
+        flex-direction: column;
+        justify-items: center;
      }
 
     /* home */
     .main-header{
         max-width: 380px;
         width: 100%;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0 auto;
     }
-    
+
+    /* about */
     .bch-container{
         width: 100%;
     }
@@ -42,4 +44,19 @@ html,body{
     .bch-tab[aria-selected="true"]{
         font-size: 18px;
     }
+
+    /* academic */
+    .page h1{
+        font-size: 32px;
+    }
+
+    .content-aca{
+        max-width: 380px;
+        width: 100%;
+    }
+
+    /* factory */
+    
+    
+    /* contact */
 }
