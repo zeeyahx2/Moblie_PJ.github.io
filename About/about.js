@@ -133,20 +133,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultTab = contactTab.find(t => t.getAttribute("aria-selected") === "true") || contactTab[0];
   openContactTab(defaultTab);
 
+const toggleHeader = document.querySelectorAll('.careerH');
+const contentSection = document.querySelectorAll('.career');
+
+toggleHeader.forEach((header, index) => {
+
+  header.addEventListener('click', function () {
+
+    contentSection[index].classList.toggle('show');
+
+    header.classList.toggle('active');
+
+  });
+
 });
 
+const details = document.querySelectorAll(".poToContent details");
 
-document.addEventListener('DOMContentLoaded', function () {
-  // ดึงองค์ประกอบ (Elements) ที่ต้องการใช้งานมาไว้ในตัวแปร
-  const toggleHeader = document.querySelector('.careerH');
-  const contentSection = document.querySelector('.career');
+details.forEach(detail => {
 
-  // เพิ่มเหตุการณ์ (Event Listener) เมื่อมีการคลิกที่ส่วนหัว
-  toggleHeader.addEventListener('click', function () {
-    // สลับคลาส 'show' เพื่อเปิด/ปิดการแสดงผลข้อความ
-    contentSection.classList.toggle('show');
+  detail.addEventListener("toggle", function(){
 
-    // สลับคลาส 'active' ที่ส่วนหัว เพื่อใช้หมุนไอคอนบวก
-    toggleHeader.classList.toggle('active');
+    if(this.open){
+
+      details.forEach(other => {
+        if(other !== this){
+          other.removeAttribute("open");
+        }
+      });
+
+    }
+
   });
+
+});
+
 });

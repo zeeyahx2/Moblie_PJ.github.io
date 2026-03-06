@@ -602,7 +602,7 @@ body { top: 0 !important; }
   justify-content: center;
 
   color: #F3E6A2;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'THK2D',sans-serif;
 
   background-color: #184274;
@@ -641,4 +641,35 @@ body { top: 0 !important; }
 
 .content-about[role="tabpanel"]{
   margin-top: -20px; /*แก้ให้2,ต่อเนื่อง,เอกโทไม่เว้นกับแท็บบาร์*/
+}
+
+.poToContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 15px;           
+    padding: 40px 20px;
+    flex-wrap: wrap;       
+}
+.poToContent details {
+    width: 180px;            
+    background-color: #fceea7; 
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #78C0E6 ;
+    overflow: hidden;       
+    transition: all 0.3s ease;
+    padding: 0px 5px 5px;
+    font-size: 20px;
+}
+summary {
+    list-style: none;       
+    padding: 15px 0px;      
+    text-align: center;     
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

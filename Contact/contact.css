@@ -1,7 +1,8 @@
 *{
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+
 }
 @font-face {
      font-family: 'THK2D';
@@ -429,16 +430,21 @@ body{
 
 .contact-detail{
   font-family: 'THK2D',sans-serif;
-  font-size: 22px;
   width: 100%;
   height: 100px;
   padding: 100px 20px;
+  /* transform: translate(0%,100%); */
   border-radius: 20px;
   background: var(--background-blue1);
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,.12);
 }
 
+.contact-detail p{
+    font-size: 16px;
+    transform: translate(0%,-50%);
+    align-items: center;
+}
 .contact-detail a{
   word-break: break-word; /*ไม่ให้ข้อความดันล้น*/
   color: #040518;
@@ -448,7 +454,7 @@ body{
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-27.5%,-50%);
+  transform: translate(-50%,-50%);
   width: 80px;
   height: 80px;
   border-radius: 999px;
@@ -480,7 +486,7 @@ body{
 }
 
 .lang-toggle-container {
-    font-family: 'K2D', sans-serif;
+    font-family: 'THK2D',sans-serif;
     position: absolute;
     top: 12px;
     right: 80px;

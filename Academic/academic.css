@@ -136,7 +136,7 @@ body{
 /* footer */
 .footer{
     font-family: 'THK2D', sans-serif;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 .footer-inner{
@@ -616,6 +616,13 @@ h1:hover .NameEngAC {
   justify-content: flex-end;
 }
 
+.table-container.active{
+  display: block;
+}
+
+.resources.hide{
+  display: none;
+}
 
 /* ตั้งค่าตัวตาราง */
 .custom-table {
