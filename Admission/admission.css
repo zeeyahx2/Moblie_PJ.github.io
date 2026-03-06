@@ -229,7 +229,7 @@ body{
   padding: 20px;
   display:block;
   text-align:center;
-  color: var(--color-h1-text);
+  color: var(--color-h1-text2);
   background: var(--bg-body);
   overflow-wrap:anywhere;
   word-break:break-all;

@@ -25,6 +25,7 @@
   --color-footer1: #6FA7C4;
   --bg-detail-box: #7EA8C8;
   --color-h1-text1: #ffffff;
+  --color-h1-text2: #040518;
 
 }
 
@@ -52,4 +53,5 @@ body.dark-mode {
   --color-footer1 : #02030D;
   --bg-detail-box : #6FA7C4;
   --color-h1-text1 : #040518;
+  --color-h1-text2: #fff;
 }
