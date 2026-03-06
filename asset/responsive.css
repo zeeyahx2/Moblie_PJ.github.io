@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+@media(max-width:450px){
+    body{
+    margin: 0 auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    }
+
+    main{
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        min-height: 100vh;
+     }
+
+    /* home */
+    .main-header{
+        max-width: 380px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .bch-container{
+        width: 100%;
+    }
+
+    .bch-tab{
+        font-size: 15px;
+    }
+
+    .bch-tab[aria-selected="true"]{
+        font-size: 18px;
+    }
+}
