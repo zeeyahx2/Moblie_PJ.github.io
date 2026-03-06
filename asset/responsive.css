@@ -23,6 +23,7 @@ html,body{
         min-height: 100vh;
         flex-direction: column;
         justify-items: center;
+        padding-bottom: 50px;
      }
 
     /* home */
@@ -31,6 +32,7 @@ html,body{
         width: 100%;
         margin: 0 auto;
     }
+
 
     /* about */
     .bch-container{
@@ -45,18 +47,96 @@ html,body{
         font-size: 18px;
     }
 
+    .content-about h1{
+        font-size: 36px;
+    }
+
+    .WhatIsIoT p{
+        font-size: 16px;
+    }
+        
+    .money1{
+        font-size: 20px;
+    }
+
+    .money2{
+        font-size: 28px;
+    }
+
+    .money3{
+        font-size: 20px;
+    }
+
     /* academic */
     .page h1{
         font-size: 32px;
     }
 
+
+
+    /* academic */
     .content-aca{
         max-width: 380px;
         width: 100%;
+    }
+
+    .resources-explain{
+        font-size: 18px;
+    }
+
+    .table-container{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+    .btn-back{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        right: 0;
+    }
+
+    .semester-box{
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .subject-info{
+        font-size: 16px;
     }
 
     /* factory */
     
     
     /* contact */
+    .address-iot{
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  max-width: 450px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 10px;
+    }
+    .address-iot .detail-box{
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .contact-panel{
+        gap: 10px;
+    }
+
+    .icon-circle{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+  width: 60px;
+  height: 60px;
+    }
+
+    .iconcontact{
+        width: 35px;
+    }
 }
