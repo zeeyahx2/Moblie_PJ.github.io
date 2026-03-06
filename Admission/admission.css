@@ -452,6 +452,7 @@ body.dark-mode .proj-notop-icon {
     filter: brightness(0) invert(1);
 }
 .lang-toggle-container {
+    font-family: 'K2D', sans-serif;
     position: absolute;
     top: 12px;
     right: 80px;

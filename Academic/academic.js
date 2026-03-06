@@ -139,6 +139,7 @@ function toggleSemester(subjectId, btnId) {
     const subjects = document.getElementById(subjectId);
     const btn = document.getElementById(btnId);
 
+    if (!subjects || !btn) return; //ป้องกันerror
     // เปลี่ยนมาเช็คว่าถ้ามันเป็น flex อยู่ ให้เปลี่ยนเป็น none 
     // นอกนั้น (รวมถึงตอนเริ่มต้นที่ค่าเป็นว่างเปล่า) ให้เปลี่ยนเป็น flex
     if (subjects.style.display === 'flex') {
@@ -148,4 +149,32 @@ function toggleSemester(subjectId, btnId) {
         subjects.style.display = 'flex';
         btn.textContent = 'CLOSE';
     }
+}
+
+// แท็บเปลี่ยนปริญญา
+  if (admisTabs.length && admisPanels.length) {
+    function activateAdmisTab(tab) {
+      const targetId = tab.getAttribute("aria-controls");
+      const targetPanel = document.getElementById(targetId);
+
+      admisTabs.forEach((t) => {
+        const active = t === tab;
+        t.setAttribute("aria-selected", String(active));
+        t.tabIndex = active ? 0 : -1;
+      });
+
+      admisPanels.forEach((p) => (p.hidden = true));
+      if (targetPanel) targetPanel.hidden = false;
+    }
+  }
+
+  // ปุ่มเข้าไปโหลดเอกสาร
+  function showTableOnly() {
+  const table = document.getElementById("target-table");
+  if (table) table.style.display = "block";
+}
+
+function goBack() {
+  const table = document.getElementById("target-table");
+  if (table) table.style.display = "none";
 }
