@@ -579,7 +579,7 @@ h1:hover .NameEngAC {
 }
 
 .resources {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   width: fit-content;
   flex-wrap: wrap;
   justify-content: center;
@@ -628,29 +628,34 @@ h1:hover .NameEngAC {
 .custom-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #3D5E85;
-  color: white;
+  background: var(--bg-resaca1);
+  /* background-color: #3D5E85; สีพื้นหลังหัวข้อ  */
+  color: var(--color-resaca1);
   font-family: 'Sarabun', sans-serif;
-  border: 2px solid #5fb6df;
+  border: var(--outline-resaca1);
+  /* border: 2px solid #5fb6df; สีกรอบนอก */
 }
 
 /* หัวตาราง */
 .custom-table th {
   padding: 15px;
-  border: 1px solid #5fb6df;
+  border: var(--outline-resaca2);
+  /* border: 1px solid #5fb6df; สีเส้นตารางหัวข้อ */
   /* เส้นขอบระหว่างเซลล์ */
   font-weight: normal;
+  color: var(--color-resaca1);
   font-size: 20px;
-  color: #e0f2fe;
+  /* color: #e0f2fe; สีของอะไร */
 }
 
 /* เนื้อหาตาราง */
 .custom-table td {
   padding: 12px 15px;
   text-align: center;
-  /* จัดตัวอักษรให้อยู่กลาง */
-  border: 1px solid #5fb6df;
-  background-color: #040518;
+  border: var(--outline-resaca3);
+  /* border: 1px solid #5fb6df; สีกรอบตาราง */
+  background: var(--bg-resaca2);
+  /* background-color: #040518;สีพื้นหลังเอกสาร */
   font-size: 18px;
 }
 
@@ -658,10 +663,10 @@ h1:hover .NameEngAC {
 .btn-download {
   display: inline-block;
   text-decoration: none;
-  color: #e0f2fe;
+  color: var(--color-resaca1);
   border: 2px solid #5fb6df;
   padding: 4px 20px;
-  background-color: #2b327b;
+  background-color: var( --bg-resaca2);
   border-radius: 20px;
 
   font-size: 13px;

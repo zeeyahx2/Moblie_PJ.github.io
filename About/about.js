@@ -133,39 +133,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultTab = contactTab.find(t => t.getAttribute("aria-selected") === "true") || contactTab[0];
   openContactTab(defaultTab);
 
-const toggleHeader = document.querySelectorAll('.careerH');
-const contentSection = document.querySelectorAll('.career');
+  const toggleHeader = document.querySelectorAll('.careerH');
+  const contentSection = document.querySelectorAll('.career');
 
-toggleHeader.forEach((header, index) => {
+  toggleHeader.forEach((header, index) => {
 
-  header.addEventListener('click', function () {
+    header.addEventListener('click', function () {
 
-    contentSection[index].classList.toggle('show');
+      contentSection[index].classList.toggle('show');
 
-    header.classList.toggle('active');
+      header.classList.toggle('active');
 
-  });
-
-});
-
-const details = document.querySelectorAll(".poToContent details");
-
-details.forEach(detail => {
-
-  detail.addEventListener("toggle", function(){
-
-    if(this.open){
-
-      details.forEach(other => {
-        if(other !== this){
-          other.removeAttribute("open");
-        }
-      });
-
-    }
+    });
 
   });
 
-});
+  const details = document.querySelectorAll(".poToContent details");
+
+  details.forEach(detail => {
+
+    detail.addEventListener("toggle", function () {
+
+      if (this.open) {
+
+        details.forEach(other => {
+          if (other !== this) {
+            other.removeAttribute("open");
+          }
+        });
+
+      }
+
+    });
+
+  });
 
 });

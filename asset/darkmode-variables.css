@@ -26,7 +26,12 @@
   --bg-detail-box: #7EA8C8;
   --color-h1-text1: #ffffff;
   --color-h1-text2: #040518;
-
+  --bg-resaca1: #F3E6A2;
+  --outline-resaca1: 2px solid #040518;
+  --outline-resaca2: 1px solid #040518;
+  --outline-resaca3: 1px solid #040518;
+  --bg-resaca2: #F7F2E9;
+  --color-resaca1: #040518;
 }
 
 body.dark-mode {
@@ -54,4 +59,10 @@ body.dark-mode {
   --bg-detail-box : #6FA7C4;
   --color-h1-text1 : #040518;
   --color-h1-text2: #fff;
+  --bg-resaca1: #3D5E85;
+  --outline-resaca1: 2px solid #5fb6df;
+  --outline-resaca2: 1px solid #5fb6df;
+  --outline-resaca3: 1px solid #5fb6df;
+  --bg-resaca2: #040518;
+  --color-resaca1: #fff;
 }

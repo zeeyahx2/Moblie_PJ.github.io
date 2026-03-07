@@ -172,9 +172,15 @@ function toggleSemester(subjectId, btnId) {
   function showTableOnly() {
   const table = document.getElementById("target-table");
   if (table) table.style.display = "block";
+
+  const resource = document.getElementById("aca-mainpage");
+  if (resource) resource.style.display = "none";
 }
 
 function goBack() {
   const table = document.getElementById("target-table");
   if (table) table.style.display = "none";
+
+  const resource = document.getElementById("aca-mainpage");
+  if (resource) resource.style.display = "block";
 }
