@@ -1,22 +1,25 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
 }
 
-html,body{
-  width:100%;
-  overflow-x:hidden;
-}
-
-@media(max-width:450px){
-    body{
-    margin: 0 auto;
+html,
+body {
+    width: 100%;
     overflow-x: hidden;
-    min-height: 100vh;
+}
+
+@media(max-width:450px) {
+    body {
+        margin: 0 auto;
+        overflow-x: hidden;
+        min-height: 100vh;
     }
 
-    main{
+    main {
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
@@ -24,10 +27,10 @@ html,body{
         flex-direction: column;
         justify-items: center;
         padding-bottom: 50px;
-     }
+    }
 
     /* home */
-    .main-header{
+    .main-header {
         max-width: 380px;
         width: 100%;
         margin: 0 auto;
@@ -35,144 +38,146 @@ html,body{
 
 
     /* about */
-    .bch-container{
+    .bch-container {
         width: 100%;
     }
 
-    .bch-tab{
+    .bch-tab {
         font-size: 15px;
     }
 
-    .bch-tab[aria-selected="true"]{
+    .bch-tab[aria-selected="true"] {
         font-size: 18px;
     }
 
-    .content-about h1{
+    .content-about h1 {
         font-size: 36px;
     }
 
-    .WhatIsIoT p{
+    .WhatIsIoT p {
         font-size: 16px;
     }
-        
-    .money1{
+
+    .money1 {
         font-size: 18px;
     }
 
-    .money2{
+    .money2 {
         font-size: 24px;
     }
 
-    .money3{
+    .money3 {
         font-size: 18px;
     }
 
     /* academic */
-    .page h1{
+    .page h1 {
         font-size: 32px;
     }
 
-    #target-table{
-    display: none;
-}
+    #target-table {
+        display: none;
+    }
 
-.aca-title{
-    display: block;
-    width: calc(100% + 70px);
-    margin-left: -35px;
-    margin-right: -15px;
-    text-align: center;
-    background: #78C0E6;
-    padding: 30px 15px;
-}
+    .aca-title {
+        display: block;
+        width: calc(100% + 70px);
+        margin-left: -35px;
+        margin-right: -15px;
+        text-align: center;
+        background: #78C0E6;
+        padding: 30px 15px;
+    }
 
-    .table-container{
-    width: 100%;
-    overflow-x: auto;
-}
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
 
-.custom-table th,
-.custom-table td{
-    white-space: nowrap;
-}
+    .custom-table th,
+    .custom-table td {
+        white-space: nowrap;
+    }
 
-.btn-back{
-    display:block;
-    width:100%;
-    margin-bottom:10px;
-}
+    .btn-back {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 
-.custom-table th{
-    font-size:14px;
-}
+    .custom-table th {
+        font-size: 14px;
+    }
 
-.custom-table td{
-    font-size:13px;
-}
+    .custom-table td {
+        font-size: 13px;
+    }
 
     /* academic */
-    .content-aca{
+    .content-aca {
         max-width: 380px;
         width: 100%;
     }
 
-    .resources-explain{
+    .resources-explain {
         font-size: 18px;
     }
 
-    .table-container{
+    .table-container {
         display: flex;
         justify-content: flex-end;
         margin: 0 auto;
     }
-    .btn-back{
+
+    .btn-back {
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 5px;
         right: 0;
     }
 
-    .semester-box{
+    .semester-box {
         max-width: 200px;
         width: 100%;
     }
 
-    .subject-info{
+    .subject-info {
         font-size: 16px;
     }
 
     /* factory */
-    
-    
+
+
     /* contact */
-    .address-iot{
-  display: flex;
-  gap: 20px;
-  align-items: stretch;
-  max-width: 450px;
-  margin: 0 auto;
-  align-items: center;
-  padding: 10px;
+    .address-iot {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+        max-width: 450px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 10px;
     }
-    .address-iot .detail-box{
+
+    .address-iot .detail-box {
         font-size: 24px;
         padding: 15px;
     }
 
-    .contact-panel{
+    .contact-panel {
         gap: 10px;
     }
 
-    .icon-circle{
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%,-50%);
-  width: 60px;
-  height: 60px;
+    .icon-circle {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
     }
 
-    .iconcontact{
+    .iconcontact {
         width: 35px;
     }
 
