@@ -1,24 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'THK2D';
-    src: url('../asset/Font/TH K2D July8.ttf')format('truetype');
-}
-
-@font-face {
-    font-family: 'Kodchasan';
-    src: url('../asset/Font/TH Kodchasal Bold.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 body {
     background-color: var(--bg-body);
-    font-family: "THK2D", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -150,7 +131,7 @@ body {
 
 /* footer */
 .footer {
-    font-family: 'THK2D', sans-serif;
+    font-family: 'K2D', sans-serif;
     margin-top: auto;
 }
 
@@ -764,7 +745,7 @@ body {
     padding: 20px 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: "THK2D", sans-serif;
+    font-family: 'K2D', sans-serif;
     font-size: 1rem;
     color: #9c731e;
     font-weight: 600;
