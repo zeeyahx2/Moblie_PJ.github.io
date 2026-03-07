@@ -496,7 +496,7 @@ h1:hover .NameEngAC {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
 }
 

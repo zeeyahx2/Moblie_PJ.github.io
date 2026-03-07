@@ -88,7 +88,7 @@
     </nav>
 
     <main class="page">
-        <section class="4">
+        <section class="sectionof4">
 
             <div class="table-container" id="target-table">
                 <button class="btn-back" onclick="goBack()">Close</button>
@@ -129,7 +129,7 @@
             <section class="aca-main" id="aca-mainpage">
 
                 <section class="content-aca" id="content_aca_iot" role="tabpanel" aria-labelledby="content-aca-iot">
-                    <h1>
+                    <h1 class="aca-title">
                         วิศวกรรมระบบไอโอทีและสารสนเทศ<br>
                         <span class="NameEngAC">B.Eng. (IoT system and Information Engineering)</span>
                     </h1>
@@ -837,7 +837,7 @@
 
                 <section class="content-aca" id="content_aca_twobch" role="tabpanel"
                     aria-labelledby="content-aca-twobch" hidden>
-                    <h1>
+                    <h1 class="aca-title">
                         ฟิสิกส์อุตสาหกรรมและวิศวกรรมระบบไอโอทีและสารสนเทศ<br>
                         <span class="NameEngAC">B.Sc. Industrial Physics + B.Eng. IoT System and Information</span>
                     </h1>
@@ -1571,7 +1571,7 @@
                 </section>
                 <section class="content-aca" id="content_aca_con" role="tabpanel" aria-labelledby="content-aca-con"
                     hidden>
-                    <h1>
+                    <h1 class="aca-title">
                         วิศวกรรมคอมพิวเตอร์และไอโอที<br>
                         <span class="NameEngAC">B.Eng. Computer Engineering and IoT</span>
                     </h1>
@@ -2067,23 +2067,25 @@
                         <div class="click-resources" id="aca-resource" onclick="showTableOnly()">Click</div>
                     </div>
 
-                    <h1 class="Master">
-                        ปริญญาโท วิศวกรรมมหาบัณฑิต (วิศวกรรมสารสนเทศ)<br>
-                        <span class="NameEngAC">M.Eng. (Information Engineering)</span>
-                    </h1>
+                    <div class="aca-title">
+                        <h1 class="Master">
+                            ปริญญาโท วิศวกรรมมหาบัณฑิต (วิศวกรรมสารสนเทศ)<br>
+                            <span class="NameEngAC">M.Eng. (Information Engineering)</span>
+                        </h1>
 
-                    <section class="blue1">
-                        <a href="https://www.reg.kmitl.ac.th/curriculum/file/graduate/01/Infor_mc2560.pdf">
-                            <img src="asset/Icon/charm--book.svg" class="book"></a>
-                    </section>
-                    <h1 class="Master">
-                        ปริญญาเอก ปรัชญาดุษฎีบัณฑิต (เอไอโอทีและสารสนเทศ)<br>
-                        <span class="NameEngAC">Ph.D. (AIoT and Information)</span>
-                    </h1>
-                    <section class="blue1">
-                        <a href="https://drive.google.com/file/d/16r4SkgENrTD4TjJB5EYgHcaTzqGkHYHr/view">
-                            <img src="asset/Icon/charm--book.svg" class="book"></a>
-                    </section>
+                        <section class="blue1">
+                            <a href="https://www.reg.kmitl.ac.th/curriculum/file/graduate/01/Infor_mc2560.pdf">
+                                <img src="asset/Icon/charm--book.svg" class="book"></a>
+                        </section>
+                        <h1 class="Master">
+                            ปริญญาเอก ปรัชญาดุษฎีบัณฑิต (เอไอโอทีและสารสนเทศ)<br>
+                            <span class="NameEngAC">Ph.D. (AIoT and Information)</span>
+                        </h1>
+                        <section class="blue1">
+                            <a href="https://drive.google.com/file/d/16r4SkgENrTD4TjJB5EYgHcaTzqGkHYHr/view">
+                                <img src="asset/Icon/charm--book.svg" class="book"></a>
+                        </section>
+                    </div>
                 </section>
             </section>
         </section>
@@ -2093,8 +2095,7 @@
         <div class="foot-container">
             <div class="footer-inner">
                 <div class="footer-logo">
-                    <a href="index.html"> <img src="asset/logo.png" alt="footer-logo"
-                            class="footer-logo-img"></a>
+                    <a href="index.html"> <img src="asset/logo.png" alt="footer-logo" class="footer-logo-img"></a>
                 </div>
 
                 <section class="footer-contact">

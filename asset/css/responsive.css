@@ -72,7 +72,43 @@ html,body{
         font-size: 32px;
     }
 
+    #target-table{
+    display: none;
+}
 
+.aca-title{
+    display: block;
+    width: calc(100% + 70px);
+    margin-left: -35px;
+    margin-right: -15px;
+    text-align: center;
+    background: #7ea6c3;
+    padding: 30px 15px;
+}
+
+    .table-container{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.custom-table th,
+.custom-table td{
+    white-space: nowrap;
+}
+
+.btn-back{
+    display:block;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.custom-table th{
+    font-size:14px;
+}
+
+.custom-table td{
+    font-size:13px;
+}
 
     /* academic */
     .content-aca{
@@ -139,4 +175,5 @@ html,body{
     .iconcontact{
         width: 35px;
     }
+
 }
