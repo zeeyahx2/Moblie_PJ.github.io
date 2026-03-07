@@ -108,29 +108,33 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const contactTab = Array.from(document.querySelectorAll('.bch-tab[role="tab"]'));
-  const contactPanel = Array.from(document.querySelectorAll('[role = "tabpanel"]'));
+  const contactPanel = Array.from(document.querySelectorAll('.contact-panel[role="tabpanel"]'));
 
-  function resetContactTab() {
-    // close the tab not click
-    contactTab.forEach(t => t.setAttribute("aria-selected", "false"));
-    contactPanel.forEach(p => p.hidden =true);
+  if (contactTab.length && contactPanel.length) {
+    function resetContactTab() {
+      contactTab.forEach(t => t.setAttribute("aria-selected", "false"));
+      contactPanel.forEach(p => p.hidden = true);
+    }
+
+    function openContactTab(tab) {
+      resetContactTab();
+
+      tab.setAttribute("aria-selected", "true");
+
+      const panelID = tab.getAttribute("aria-controls");
+      const panel = document.getElementById(panelID);
+
+      if (panel) panel.hidden = false;
+    }
+
+    contactTab.forEach(tab => {
+      tab.addEventListener("click", () => openContactTab(tab));
+    });
+
+    const defaultTab =
+      contactTab.find(t => t.getAttribute("aria-selected") === "true") || contactTab[0];
+
+    if (defaultTab) openContactTab(defaultTab);
   }
-
-  function openContactTab(tab) {
-    resetContactTab();
-    // open first tab
-    tab.setAttribute("aria-selected","true");
-
-    const panelID = tab.getAttribute("aria-controls")
-    const panel = document.getElementById(panelID);
-
-    if (panel) panel.hidden = false;
-  }
-contactTab.forEach(tab => {
-    tab.addEventListener("click", () => openContactTab(tab));
-  });
-
-  const defaultTab = contactTab.find(t => t.getAttribute("aria-selected") === "true") || contactTab[0];
-  openContactTab(defaultTab);
 
 });
